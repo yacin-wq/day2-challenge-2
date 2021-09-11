@@ -1,0 +1,182 @@
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-container{
+    width: auto;
+}
+
+.image{
+    display: block;
+    height: 100%;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 7em 10em 7em ;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    background-image: url("bg-pattern-desktop.svg");
+}
+
+.clrTxt{
+    color: hsl(0, 93%, 68%);
+    font-weight: 300;
+    margin: 0;
+}
+
+h4{
+    color: hsl(0, 93%, 68%);
+    line-height: 30px;
+}
+
+h2{
+    margin: 0;
+    font-weight: 400;
+}
+
+.big-text{
+    color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 100px;
+    border-right: none;
+    border-color: hsl(0, 93%, 68%);
+    width: fit-content;
+}
+
+.wrong{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+input{
+    padding-left: 1em;
+    width: 30em;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button{
+    border-radius: 100px;
+    padding: 1em 3em;
+    border: unset;
+    box-shadow: -4px 3px 9px 0px black;
+    cursor: pointer;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    transition: all 0.2s ease; 
+}
+
+button:hover{
+    background: hsl(0, 80%, 86%);
+}
+
+.add-section>h2 {
+    color: hsl(0, 100%, 51%);
+    font-size: 16px;
+    margin: 0.7em;
+}
+
+.buge{
+    visibility: hidden;
+}
+
+.logo-mob{
+    display: none;
+}
+
+.logo-desc{
+    display: block;
+}
+
+
+
+.bug{
+    visibility: hidden;
+}
+
+.image-mob{
+    display: none;
+}
+
+@media only screen and (max-width: 412px) {
+    .main-container{
+        flex-direction: column;
+    }
+    
+    .image{
+        display: none;
+    }
+
+    .image-mob{
+        display: block;
+        width: 100%;
+    }
+
+    .logo-mob{
+        display: block;
+        margin: 2em;
+    }
+
+    .logoImg{
+        width: 7em;
+    }
+    
+    .logo-desc{ 
+        display:none;
+    }
+
+    .big-text{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .text-container{
+        padding: 5em 2em 5em 2em ;
+    }
+
+    input{
+        width: 100%;
+    }
+    .wrong{
+        width: 100%;
+    }
+
+    .input-section{
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .small-text{
+        text-align: center;
+    }
+
+    .add-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
